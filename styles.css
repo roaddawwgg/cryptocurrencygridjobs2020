@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    color: #00ff00;
+    font-family: 'Courier New', monospace;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    color: #00ff00;
+    margin-bottom: 30px;
+    font-size: 2em;
+    text-shadow: 0 0 10px #00ff00;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    gap: 2px;
+    background-color: #000;
+    padding: 10px;
+    border: 2px solid #00ff00;
+}
+
+.cell {
+    background-color: #000;
+    border: 1px solid #00ff00;
+    padding: 15px;
+    min-height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #00ff00;
+    font-size: 11px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.cell:hover {
+    background-color: #001a00;
+    box-shadow: 0 0 10px #00ff00;
+    transform: scale(1.05);
+}
+
+.cell.empty {
+    color: #004400;
+    border-color: #003300;
+}
+
+.job-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+
+.job-company {
+    font-size: 10px;
+    color: #00dd00;
+    margin-bottom: 3px;
+}
+
+.job-salary {
+    font-size: 9px;
+    color: #00bb00;
+}
